@@ -1,0 +1,180 @@
+ /* $VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+$Desaturated Dark Blue: hsl(214, 17%, 51%);
+- Grayish Blue: hsl(212, 23%, 69%);
+- Light Grayish Blue: hsl(210, 46%, 95%) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    
+    
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img {
+    background-image: url(../images/drawers.jpg);
+   flex-basis: 40%;
+   height: 46.2%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 10px  0  0 10px;
+}
+
+
+.box {
+    background-color: #fff;
+    flex-basis: 60%;
+    border-radius: 0 10px 10px 0;
+    padding: 40px;
+    height: 46.2%;
+
+}
+
+h2 {
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+
+
+.souchl {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+
+
+.michelle {
+    border-radius: 50%;
+    height: 50px;
+}
+.sher {
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+
+}
+
+.drop {
+    display: none;
+}
+.shaer {
+    height: 20px;
+
+}
+
+
+.show {
+    position: absolute;
+    display: flex;
+    background-color:hsl(217, 19%, 35%) ;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    padding:15px 20px;
+    justify-content: space-between;
+    right: 16%;
+    bottom: 44%;
+}
+
+.show img {
+    height: 18px;
+    
+}
+
+.show p {
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+@media (max-width: 767px){
+    .container {
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .img {
+        border-radius: 10px  10px  0  0;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .text p {
+        line-height: 1.8;
+        font-size: 14px;
+        margin-bottom: 10px;
+
+    }
+    .box {
+        flex-basis: 50%;
+        padding: 40px;
+        height: 46.2%;
+    
+    }
+    .show {
+        position: absolute;
+        display: flex;
+        background-color:hsl(217, 19%, 35%) ;
+        width: 90%;
+        height: 90px;
+        border-radius: 0 0 10px 10px ;
+        padding:15px 20px;
+        justify-content: flex-start;
+        right: 5%;
+        bottom:-10px;
+    }
+    
+    .show img {
+        height:25px;
+        padding-left: 25px;
+        margin-top: 15px;
+        
+    }
+    
+    .show p {
+        color: hsl(212, 23%, 69%);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .sher {
+        z-index: 5;
+        margin-top: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .souchl {
+        margin-top: 35px;
+    }
+}
